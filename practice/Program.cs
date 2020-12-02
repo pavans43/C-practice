@@ -8,31 +8,49 @@ namespace practice
 {
     class Program
     {
-       public static void Main(string[] args)
+        // Reverse a string 
+       // public static void Main(string[] args)
+       // {
+            //string str = "";
+            //string reverse= "";
+            //int Length;
+
+            //Console.WriteLine("Enter a name");
+            //str = Console.ReadLine();
+
+            //Length = str.Length-1;
+
+            //while(Length >=0)
+            //{
+            //    reverse = reverse + str[Length];
+            //    Length--;
+            //}
+
+            //Console.WriteLine("Reverse word is {0}", reverse);
+            //Console.ReadLine();
+
+      //  }
+
+    public static void Main()
+
         {
-            string str = "";
-            string reverse= "";
-            int Length;
+            //reverse an array 
 
-            Console.WriteLine("Enter a name");
-            str = Console.ReadLine();
-
-            Length = str.Length-1;
-
-            while(Length >=0)
+            int[] array = { 1, 3, 5, 15, 99 };
+            foreach(int a in array)
             {
-                reverse = reverse + str[Length];
-                Length--;
+                Console.WriteLine(a);
+                Console.ReadLine();
             }
-
-            Console.WriteLine("Reverse word is {0}", reverse);
+            Array.Reverse(array);
+            Console.WriteLine("reversed array:");
             Console.ReadLine();
+            foreach(int value in array)
+            {
+                Console.WriteLine(value);
+            }
+            Console.ReadLine();
+    }
 
-           
-            
-
-
-
-        }
     }
 }
